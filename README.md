@@ -10,6 +10,20 @@ Descarga del link [sponsor-data](https://pip.pypa.io/en/stable/) la librería AA
 
 ## Usage
 
+### Agrega el apikey proporcionado al archivo de strings.xml
+```xml
+<resources>
+    <string name="sponsor_data_apikey">aaaaaaaaaaxxxxxxxx</string>   
+</resources>
+```
+
+### Agrega el meta-data con el apikey en el archivo Manifest.xml
+```xml
+ <meta-data
+            android:name="com.sponsor.data.v1.API_KEY"
+            android:value="@string/sponsor_data_apikey" />
+```
+
 ### Uso con Volley (https://developer.android.com/training/volley?hl=es-419)
 
 Para integrar sponsor-data-sdk con la librería de Volley agrega lo siguiente:
